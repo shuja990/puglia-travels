@@ -9,7 +9,7 @@ const AboutUs = () => {
         <Title title='About Us' />
         <h3>We are Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid magni.</h3>
         <p>Our team Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dignissimos neque quis, tempore aliquam expedita unde similique libero et totam ipsum praesentium necessitatibus, facilis provident ducimus quas! Aliquam, odit cupiditate. Dolores, dignissimos neque quis, tempore aliquam expedita unde similique libero et totam ipsum praesentium necessitatibus, facilis provident ducimus quas! Aliquam, odit cupiditate.</p>
-        <p>Read more <span>&#8594;</span></p>
+        {/* <p>Read more <span>&#8594;</span></p> */}
       </div>
       <div className='about-image'>
         <img src='/tours/tour-1-4.jpg' alt='background-1' />
@@ -21,6 +21,7 @@ const AboutUs = () => {
 const AboutUsWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  margin-top:10px;
   grid-gap: 2rem;
 
   .about-text h3 {

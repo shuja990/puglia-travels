@@ -61,6 +61,6 @@ input:disabled {
 
 @media (min-width: 768px) {
   .body-margin {
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
   }
 }

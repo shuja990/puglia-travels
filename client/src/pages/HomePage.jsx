@@ -38,7 +38,7 @@ class HomePage extends Component {
         <div style={{margin: '0 1rem'}}>
         <AboutUs />
         <Services />
-        <Subscribe />
+        {/* <Subscribe /> */}
         {/* FEATURED TOURS */}
         <FeaturedTours featuredTours={this.featuredTours} />
         <Gallery tours={this.props.tours} />

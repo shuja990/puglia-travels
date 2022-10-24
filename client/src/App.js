@@ -48,7 +48,7 @@ const App = () => {
 
   // FOR OTHER PAGES, SHOW NAVBAR
   const defaultContainer = () => (
-    <div className='body-margin'>
+    <div className=''>
       <Header />
       <Route exact path='/tours' component={ToursPage} />
       <Route path='/tours/:id' component={SingleTourPage} />

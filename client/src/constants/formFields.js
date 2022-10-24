@@ -3,7 +3,7 @@ export const loginForm = [
     name: 'email',
     label: 'Email',
     type: 'text',
-    placeholder: 'admin@gotravel.com'
+    placeholder: 'admin@pugliatravels.com'
   },
   {
     name: 'password',

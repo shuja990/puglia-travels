@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import StarRatings from "react-star-ratings";
 import { FiMapPin } from "react-icons/fi";
-import { processPayment } from "../../redux/actions/checkoutAction";
+import { processPayment } from '../../redux/actions/checkoutAction';
 import { connect } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
@@ -14,17 +14,18 @@ const TourShowHeader = ({
   id,
   startLocation,
   ratingsAverage,
+  processPayment,
   price,
   isSignedIn,
-  history
+  history,
 }) => {
   const handlePayment = async () => {
     if (!isSignedIn) {
-      history.push("/login");
+      history.push('/login')
     } else {
       processPayment(id, stripePromise);
     }
-  };
+  }
   return (
     <Elements stripe={stripePromise}>
       <Header>
