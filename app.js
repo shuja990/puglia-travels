@@ -13,6 +13,7 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const AppError = require('./utils/appError');
+const importData = require('./dev-data/data/import-dev-data')
 const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
@@ -54,6 +55,11 @@ app.use(compression());
 
 
 // 2) ROUTES
+app.post('/import-data', (req, res) => {
+  importData()
+  res.status(200)
+  res.json("Data Imported")
+})
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);

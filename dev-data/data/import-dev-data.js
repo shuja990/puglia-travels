@@ -56,4 +56,5 @@ if (process.argv[2] === '--import') {
 
 console.log(process.argv)
 
+module.exports = importData
 // node dev-data/data/import-dev-data.js --delete
